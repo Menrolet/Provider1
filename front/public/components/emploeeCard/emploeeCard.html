@@ -1,0 +1,17 @@
+<div class="box emploee_card">
+    <svg class="emploee_card__cross" id="emploee_card__cross">
+        <use xlink:href="/icons.svg#cross"/>
+    </svg>
+    <div class="enter_sign">{{sign}}</div>
+    <form method="post" id="emploee_card" class="emploee_card_wrapper">
+        <div id="emploee_card__inputs_wrapper">
+            <input id="emploee_card__surname_input" type="text" class="emploee_card__input"
+                   placeholder="Фамилия" id="surname_form" value="{{surname}}">
+            <input id="emploee_card__name_input" type="text" class="emploee_card__input"
+                   placeholder="Имя" id="name_form" value="{{name}}">
+            <input id="emploee_card__fathername_input" type="text" class="emploee_card__input"
+                   placeholder="Отчество" id="fathername_form" value="{{fathername}}">
+        </div>
+        <input class="accent_button button horizontal_center_div" type="button" value="Сохранить" id="emploee_card__submit_button">
+        </form>
+</div>

@@ -1,0 +1,23 @@
+<div class="box request_card">
+    <svg class="request_card__cross" id="request_card__cross">
+        <use xlink:href="/icons.svg#cross"/>
+    </svg>
+    <div class="enter_sign">{{sign}}</div>
+    <form method="post" id="request_card" class="request_card_wrapper">
+        <div class="request_card__inputs_wrapper">
+            <select id="emploee_form" class="select_menu">
+                {{#each emploees}}
+                <option data-em-id={{this.ID}}>{{this.Name}} {{this.Surname}} {{this.Fathername}}</option>
+                {{/each}}
+            </select>
+            <select id="equipment_form" class="select_menu">
+                {{#each types}}
+                <option data-eq-id={{this.ID}} data-eq-weight={{this.Weight}}>{{this.Name}}: {{this.Weight}}</option>
+                {{/each}}
+            </select>
+            <input type="text" class="emploee_card__input"
+                   placeholder="Адрес" id="address_input" value="{{address}}">
+        </div>
+        <input class="accent_button button horizontal_center_div" type="button" value="Сохранить" id="request_card__submit_button">
+        </form>
+</div>

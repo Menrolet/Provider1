@@ -1,0 +1,155 @@
+@import "variables.scss";
+
+.row {
+  display: flex;
+  flex-flow: row;
+}
+
+.column {
+  display: flex;
+  flex-flow: column;
+}
+
+.disabled {
+  user-select: none;
+  pointer-events: none;
+}
+
+.div_width_available {
+  width: -moz-available !important;
+  width: -webkit-fill-available !important;
+}
+
+.flex-wrapper {
+  flex-wrap: wrap;
+}
+
+.button {
+  display: block;
+  margin: 5px 5px 5px 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+  &:active {
+    transform: translateY(2px);
+  };
+}
+
+.accent_button {
+  background: $main;
+  color: $light;
+  border-radius: 10px;
+  width: 200px;
+  padding: 10px 0 10px 0;
+  border: 3px solid $main;
+  text-align: center;
+  &:hover {
+    background: $darken-main;
+    border: 3px solid $darken-main;
+  };
+}
+
+.non_accent_button {
+  background: $light;
+  border-radius: 10px;
+  border: 3px solid rgba(104, 11, 197, 0.75);
+  width: 200px;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  &:hover {
+    background: $main;
+    color: $light;
+    border: 3px solid $main;
+  };
+}
+
+.negative_accent_button {
+  background: $negative;
+  color: $light;
+  fill: $light;
+  border-radius: 10px;
+  width: 200px;
+  padding: 10px 0 10px 0;
+  border: 3px solid $negative;
+  text-align: center;
+  &:hover {
+    background: $dark-negative;
+    border: 3px solid $dark-negative;
+  };
+}
+
+.negative_non_accent_button {
+  color: $negative;
+  fill: $negative;
+  background: $light;
+  border-radius: 10px;
+  border: 3px solid $negative;
+  width: 200px;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  &:hover {
+    background: $negative;
+    color: $light;
+    fill: $light;
+    border: 3px solid $negative;
+  };
+}
+
+.box {
+  background: $light;
+  border-radius: 14px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: -moz-available;
+  width: -webkit-fill-available;
+  height: fit-content;
+  max-width: 100%;
+}
+
+
+.horizontal_center_div {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.vertical_center_div {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
+
+.link {
+  color: $main;
+  cursor: pointer;
+  &:hover {
+    color: $negative;
+  };
+}
+
+.div_textarea {
+  width: 100%;
+  /*border: $slight-dark 1px solid;*/
+  outline: none;
+  resize: none;
+  font-size: 16px;
+  margin: 6px;
+  padding: 7px;
+  border-radius: 15px;
+  word-wrap: anywhere;
+  cursor: text;
+  background: $textarea-background;
+  &:focus {
+    background: $focus-textarea-background;
+  };
+  &[placeholder]:empty:before {
+    content: attr(placeholder);
+    color: $ligther-text;
+  };
+  &[placeholder]:empty:focus:before {
+    content: ' ';
+  };
+}
+
+.success_message{
+    color: $positive;
+    font-size: 12px;
+    margin: -7px 15px 7px;
+}

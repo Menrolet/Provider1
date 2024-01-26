@@ -1,0 +1,67 @@
+{
+  "name": "ve.ru",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "npm run preProcess && PORT=8000 DEBUG=server node server",
+    "preProcess": "npm run build:ts && npm run build:scss && npm run tmpl && npm run webpack-build",
+    "build:ts": "tsc --build",
+    "build:scss": "node-sass --output-style compressed front/public/static/css/index.scss > front/public/static/css/index.css",
+
+    "tmpl": "front/templating.sh",
+    "deleteTemplates": "rm -rd \"front/public/components/tmpl\"",
+    "webpack-build": "cd ./front && NODE_ENV='development' webpack",
+
+    "postgres": "npm run postgres:install && npm run postgres:makeDB",
+    "postgres:install": "sudo apt-get install -y postgresql postgresql-contrib",
+    "postgres:makeDB": "sudo ./database/db_installer.sh",
+    "postgres:dropDB": "sudo ./database/db_dropper.sh",
+    "postgres:refresh": "sudo ./database/db_eraser.sh && sudo ./database/db_filler.sh",
+    "postgres:look": "sudo ./database/db_viewer.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FackOff25/TI_homework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FackOff25/TI_homework/issues"
+  },
+  "homepage": "https://github.com/FackOff25/TI_homework#readme",
+  "dependencies": {
+    "@babel/core": "^7.20.5",
+    "@types/morgan": "^1.9.9",
+    "@types/pg": "^8.10.9",
+    "@types/typescript": "^2.0.0",
+    "async": "^3.2.5",
+    "async-foreach": "^0.1.3",
+    "body-parser": "^1.20.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.2",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "forever": "^4.0.3",
+    "handlebars": "^4.7.7",
+    "morgan": "^1.10.0",
+    "node-sass": "^8.0.0",
+    "pg": "^8.11.3",
+    "sass": "^1.70.0",
+    "ts-dotenv": "^0.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "babel-loader": "^9.1.0",
+    "css-loader": "^6.7.2",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "svg-inline-loader": "^0.8.2",
+    "typescript": "^5.3.3",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}

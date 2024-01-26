@@ -1,0 +1,7 @@
+@import "variables.scss";
+
+@media screen and (max-device-width: $mobileMinPx){
+  .div_textarea {
+    padding: 16px;
+  }
+}

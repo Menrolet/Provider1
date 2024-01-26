@@ -1,0 +1,32 @@
+$main: #0bc5a6;
+/*$light-main: #a180c9;*/
+$light-main: lighten($main, 50%);
+/*$slight-darken-main: #5E09B2;*/
+$slight-darken-main: darken($main, 5%);
+/*$darken-main: #470D81;*/
+$darken-main: darken($main, 15%);
+$light: #FFFFFF;
+/*$slight-dark: #E8E8E8;*/
+$slight-dark: darken($light, 5%);
+/*$slight-darker-dark: #c7c7c7;*/
+$slight-darker-dark: darken($light, 15%);
+$negative: #FF1D89;
+/*$dark-negative: #ba1563;*/
+$dark-negative: darken($negative, 5%);
+$text: #000000;
+/*$ligther-text: #363636;*/
+$ligther-text: lighten($text, 10%);
+/*$focused-background: #eeeeee;*/
+$focused-background: darken($light, 1%);
+/*$textarea-background: #f5f5f5;*/
+$textarea-background: darken($light, 4%);
+/*$focus-textarea-background: #f1f1f1;*/
+$focus-textarea-background: darken($textarea-background, 3%);
+
+$positive: #06c000;
+
+@mixin svgColor($color){
+  fill: $color;
+  color: $color;
+  stroke: $color;
+}

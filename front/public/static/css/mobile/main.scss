@@ -1,0 +1,413 @@
+@import "variables.scss";
+
+@media screen and (max-device-width: $mobileMinPx) {
+  .root {
+    grid-template-columns: 0fr 6fr 0fr;
+    margin-top: 80px;
+  }
+
+  .navbar {
+    height: 80px;
+    grid-template-columns: 0.4fr 1.2fr 0.5fr 160px;
+  }
+
+  .navbar__button {
+    font-size: 25px;
+    line-height: 81px;
+  }
+
+  .navbar__button_right svg {
+    width: 36px;
+    height: 36px;
+    margin: 22px 10px;
+  }
+
+  .navbar__logo {
+    width: 115px;
+    height: 60px;
+    border-radius: 24px;
+    margin: 7px 0 7px 10px;
+    line-height: 46px;
+    border: 5px solid $light;
+    font-size: 36px;
+  }
+
+  .navbar__logo:hover {
+    background: $slight-dark;
+    border-radius: 24px;
+    border: 5px solid $slight-dark;
+  }
+
+  .navbar__logo:active {
+    background: $main;
+    color: $light;
+    border-radius: 24px;
+    border: 5px solid $light;
+  }
+
+  .navbar__search_form__wrapper {
+    height: 80px;
+  }
+
+  .navbar__search_form {
+    width: 90%;
+    height: 25px;
+    margin: 10px 0 10px 0;
+    color: $main;
+  }
+
+  .navbar__profile_block div {
+    font-size: 30px;
+  }
+
+  .navbar__profile_block svg {
+    display: none;
+  }
+
+  .navbar__profile_block__nickname {
+    display: none;
+  }
+
+  .navbar__profile_block__profile_picture {
+    width: 54px;
+    height: 54px;
+    margin: 14px 10px 14px 10px;
+  }
+
+  .user_plug_menu {
+    width: 170px;
+    top: 80px;
+  }
+
+  .navbar_menu__element {
+    font-size: 25px;
+    padding: 18px;
+  }
+
+  .article__category {
+    font-size: 26px;
+    line-height: 24px;
+  }
+
+  .article__author {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .article__tag {
+    font-size: 28px;
+  }
+
+  .article__comments_count {
+    font-size: 25px;
+
+    svg {
+      width: 34px;
+      height: 34px;
+    }
+  }
+
+  .article__rating__count {
+    font-size: 25px;
+  }
+
+  .article__rating svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .article__comments_count {
+    padding: 8px 3px 8px 3px;
+  }
+
+  .article_edit__add_tag {
+    font-size: 30px;
+    line-height: 40px;
+    border-radius: 25px;
+    padding: 10px;
+  }
+
+  .select_menu {
+    font-size: 30px;
+  }
+
+  .article_edit__save_button {
+    font-size: 30px;
+    border-radius: 25px;
+  }
+
+  .article_edit__footer {
+    bottom: 24px;
+    height: fit-content;
+    div.accent_button{
+      width: fit-content;
+      padding: 10px;
+    }
+  }
+
+  .article_edit div, select {
+    margin: 10px;
+  }
+
+  .article__profile_picture {
+    width: 50px;
+    height: 50px;
+  }
+
+  .article__description {
+    margin: 10px 0;
+  }
+
+  .article__top_bar {
+    margin-top: 20px;
+  }
+
+  .commentary__block__wrapper {
+    width: 90%;
+  }
+
+  .commentary__author {
+    font-size: 30px;
+  }
+
+  .commentary__header {
+    height: fit-content;
+  }
+
+  .commentary__profile_picture {
+    width: 65px;
+    height: 65px;
+  }
+
+  .commentary__author {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+  }
+
+  .article__rating {
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .article__rating__count {
+    font-size: 35px;
+  }
+
+  .commentary__rating {
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .commentary_form__save_button {
+    font-size: 30px;
+    border-radius: 30px;
+  }
+
+  .article__content {
+    font-size: 35px;
+  }
+
+  .article_edit__footer {
+    left: 0;
+    right: 0;
+  }
+
+  .div_textarea {
+    font-size: 35px;
+  }
+
+  .advanced_search__sidebar__tags__message {
+    font-size: 30px;
+  }
+
+  .navbar__search_form__button {
+    margin-left: -55px;
+    margin-top: 24px;
+
+    svg {
+      width: 37px;
+      height: 37px;
+    }
+  }
+
+  .feed_page__header__name {
+    font-size: 45px;
+  }
+
+  .feed_page__header__description {
+    font-size: 35px;
+  }
+
+  .feed_page__header__subscribers {
+    font-size: 22px;
+  }
+
+  .center_with_sidebar {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .right_side_bar__content {
+    font-size: 35px;
+  }
+
+  .sidebar_title {
+    font-size: 45px;
+  }
+
+  .right_side_bar {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .feed_page__header__subscribe_button {
+    font-size: 45px;
+  }
+
+  .feed_page__header__subscribed {
+    border-radius: 35px;
+    padding: 10px 20px 10px 10px;
+    svg {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .feed_page__header__unsubscribe {
+    border-radius: 35px;
+    padding: 10px 20px 10px 10px;
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .feed_page__header__login{
+    font-size: 30px;
+  }
+
+  .feed_page__header__subscribers{
+    font-size: 35px;
+  }
+
+  .form_label{
+    font-size: 40px;
+  }
+
+  .form{
+    width: -moz-available;
+    width: -webkit-fill-available;
+    font-size: 35px;
+  }
+
+  .settings__avatar_row_avatar{
+    width: 230px;
+    height: 230px;
+  }
+
+  .settings__avatar_link{
+    font-size: 45px;
+    margin-left: 10px;
+  }
+
+  .accent_button{
+    width: -moz-available;
+    width: -webkit-fill-available;
+    font-size: 50px;
+  }
+
+  .log_label_wrapper{
+    width: -moz-available;
+    width: -webkit-fill-available;
+    padding: 0 30px;
+    gap: 15px;
+  }
+
+  .commentary_form__save_button{
+    width: fit-content;
+  }
+
+  .feed_page__header{
+    gap: 15px;
+  }
+
+  .overlay{
+    grid-template-columns: 0fr 3fr 0fr;
+  }
+
+  .login_form{
+    width: 80%;
+    margin: auto;
+  }
+
+  .enter_sign{
+    font-size: 50px;
+  }
+
+  .login_form__log_input{
+    font-size: 35px;
+  }
+
+  .non_accent_button{
+    width: -moz-available;
+    width: -webkit-fill-available;
+    font-size: 50px;
+  }
+
+  .overlay__center{
+    height: -moz-available;
+    height: -webkit-fill-available;
+  }
+
+  .login_form__cross {
+    width: 50px;
+    height: 50px;
+    left: calc(100% - 75px);
+  }
+
+  .login_form__go_back{
+    width: 60px;
+    height: 60px;
+    opacity: 0.5;
+    left: 3px;
+    top: -47px;
+  }
+
+  .alert_prompt{
+    width: 90%;
+    &__content{
+      max-width: 90%;
+      font-size: 35px;
+    }
+    div.button{
+      font-size: 35px !important;
+      width: 50%;
+    }
+  }
+
+  .article__edit_button{
+    padding: 8px 3px 8px 3px;
+    svg{
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  .article__bottom_bar{
+    gap: 15px;
+  }
+
+  .article_edit__delete_button{
+    height: 70px;
+    width: 70px;
+    margin-left: auto !important;
+    svg{
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
